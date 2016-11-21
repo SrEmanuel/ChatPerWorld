@@ -1,0 +1,2 @@
+spy_format: '&c[%WORLD%]&r <%PLAYER%> &r%MESSAGE%'
+global_format: '&c[GLOBAL]&r <%PLAYER%> &r%MESSAGE%'
