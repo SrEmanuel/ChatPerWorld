@@ -1,8 +1,0 @@
-name: ChatPerWorld
-author: gronnmann
-version: 1.0
-main: io.github.gronnmann.chatperworld.Main
-commands:
-    chatperworld:
-        description: Main plugin command.
-        aliases: [cpw]
