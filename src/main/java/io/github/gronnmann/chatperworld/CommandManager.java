@@ -1,4 +1,4 @@
-package main.java.io.github.gronnmann.chatperworld;
+package io.github.gronnmann.chatperworld;
 
 import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.Bukkit;

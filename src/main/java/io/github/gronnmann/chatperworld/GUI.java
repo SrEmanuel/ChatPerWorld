@@ -1,4 +1,4 @@
-package main.java.io.github.gronnmann.chatperworld;
+package io.github.gronnmann.chatperworld;
 
 import java.util.ArrayList;
 import java.util.HashMap;
