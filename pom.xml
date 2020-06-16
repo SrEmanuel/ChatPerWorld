@@ -6,7 +6,7 @@
 
     <groupId>io.github.gronnmann</groupId>
     <artifactId>chatperworld</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <name>ChatPerWorld</name>
     <description>Adapted by Brun0XP to support papi</description>
 
