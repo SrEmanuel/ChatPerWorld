@@ -1,7 +1,10 @@
-name: ChatPerWorld
+name: ${project.name}
 author: gronnmann
-version: 1.0
+description: ${project.description}
+version: ${project.version}
 main: io.github.gronnmann.chatperworld.Main
+softdepend: [PlaceholderAPI]
+
 commands:
     chatperworld:
         description: Main plugin command.

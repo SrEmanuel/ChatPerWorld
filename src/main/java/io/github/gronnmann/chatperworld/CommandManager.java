@@ -1,5 +1,6 @@
-package io.github.gronnmann.chatperworld;
+package main.java.io.github.gronnmann.chatperworld;
 
+import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -46,11 +47,13 @@ public class CommandManager implements CommandExecutor{
 				sl.append(args[i] + " ");
 			}
 			
-			String msg = sl.toString();
+			String globalString = ChatColor.translateAlternateColorCodes('&', ConfigManager.getConfig().getString("global_format"))
+					.replaceAll("%PLAYER%", sender.getName())
+					.replaceAll("%MESSAGE%", sl.toString());
+
 			for (Player oPl : Bukkit.getOnlinePlayers()){
-				oPl.sendMessage(ChatColor.translateAlternateColorCodes('&', ConfigManager.getConfig().getString("global_format"))
-						.replaceAll("%PLAYER%", sender.getName())
-						.replaceAll("%MESSAGE%", msg));
+				oPl.sendMessage(sender instanceof Player ?
+						PlaceholderAPI.setPlaceholders((Player) sender, globalString) : globalString);
 			}
 		}
 		
